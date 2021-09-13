@@ -1,5 +1,4 @@
 # Gtk-hello
-***
 
 Bored are you?
 
