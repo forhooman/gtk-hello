@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2021 Sohan Jain <forhoooman@gmail.com> -->
+<component type="desktop">
+	<id>com.github.forhooman.gtk-hello</id>
+	<metadata_license>CC0</metadata_license>
+	<name>Gtk Hello</name>
+	<summary>Press Button.</summary>
+	<description>
+		<p>Bored are you?</p>
+		<p>Our Application's button has a solution for it ;)</p>
+	</description>
+</component>
