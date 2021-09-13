@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2021 Sohan Jain <forhoooman@gmail.com> -->
 <component type="desktop">
+
 	<id>com.github.forhooman.gtk-hello</id>
 	<metadata_license>CC0</metadata_license>
 	<name>Gtk Hello</name>
 	<summary>Press Button.</summary>
+
 	<description>
 		<p>Bored are you?</p>
 		<p>Our Application's button has a solution for it ;)</p>
 	</description>
+
+	<custom>
+		<value key="x-appcenter-color-primary">#603461</value>
+		<value key="x-appcenter-color-primary-text">rgb(255, 255, 255)</value>
+		<value key="x-appcenter-suggested-price">5</value>
+		<value key="x-appcenter-stripe">pk_live_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</value>
+	</custom>
 </component>
