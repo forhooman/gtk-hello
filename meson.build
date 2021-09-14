@@ -1,26 +1,39 @@
 # project name and programming language
 project('com.github.forhooman.gtk-hello','vala','c')
 
+# Include the translation module
+i18n = import('i18n')
+
+# Set translation domain
+add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language: 'c')
+
 # Create a new executable, list the files we want to compile, list the dependencies we need, and install 
 executable(
 	meson.project_name(),
 	'src' / 'Application.vala',
 	dependencies: [
-        dependency('gkt+-3.0')
+        dependency('gtk+-3.0')
         ],
         install: true
 )
 
-# Install our .desktop file so the Applications Menu will see it
-install_data(
-    'data' / 'hello-again.desktop',
-    install_dir: get_option('datadir') / 'application',
-    rename: meson.project_name() + '.desktop'
+# Translate and install .desktop file
+i18n.merge_file(
+    input: 'data' / 'gtk-hello.desktop.in',
+    output: meson.project_name() + '.desktop',
+    po_dir: meson.source_root() / 'po',
+    type: 'desktop',
+    install: true,
+    install_dir: get_option('datadir') / 'applications'
 )
 
-# Install our .appdata.xml file so AppCenter will see it
-install_data(
-    'data' / 'hello-again.appdata.xml',
-    install_dir: get_option('datadir') / 'metainfo',
-    rename: meson.project_name() + '.appdata.xml'
+# Translate and install .appdata file
+i18n.merge_file(
+    input: 'data' / 'gtk-hello.appdata.xml.in',
+    output: meson.project_name() + '.appdata.xml',
+    po_dir: meson.source_root() / 'po',
+    install: true,
+    install_dir: get_option('datadir') / 'metainfo'
 )
+
+subdir('po')
