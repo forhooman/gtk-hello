@@ -15,7 +15,10 @@ sudo apt install git valac
 
 ```
 git clone https://github.com/forhooman/gtk-hello.git
+```
+```
 cd gtk-hello && cd src
+```
+```
 vala --pkg gtk+-3.0 Application.vala
-
 ```
