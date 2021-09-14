@@ -20,7 +20,7 @@ git clone https://github.com/forhooman/gtk-hello.git && cd gtk-hello
 meson build --prefix=/usr
 ```
 ```
-cd build && ninja
+cd build && ninja com.github.forhooman.gtk-hello
 ```
 ```
 ninja install
