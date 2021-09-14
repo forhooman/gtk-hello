@@ -14,10 +14,7 @@ sudo apt install git valac meson
 ## Install
 
 ```
-git clone https://github.com/forhooman/gtk-hello.git
-```
-```
-cd gtk-hello
+git clone https://github.com/forhooman/gtk-hello.git && cd gtk-hello
 ```
 ```
 meson build --prefix=/usr
