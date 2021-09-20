@@ -6,6 +6,8 @@ Bored are you?
 
 Our Application's Button has a solution for it ;)
 
+![](data/assets/screenshots/screenshot-clicked-8.png)
+
 ## Dependencies
 
 ```
