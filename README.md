@@ -12,7 +12,7 @@ Our Application's Button has a solution for it ;)
 sudo apt install git valac meson
 ```
 
-## Install
+## Build
 
 ```
 git clone https://github.com/forhooman/gtk-hello.git && cd gtk-hello
